@@ -1,0 +1,90 @@
+<html>
+<body>
+	<head>
+		<title>HipCAP</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<table class="main_table" >
+	<caption align=bottom class=captiondataframe></caption>
+	<tr>
+		<td colspan = "3">
+			<div id="intro_title" class="page_title_border">
+				<span class="page_title">
+					<a href="index.html">HipCAP</a>: 
+					A Concurrency Verification System <br> with Higher-Order Concurrent Abstract Predicates</span>
+				<br><br>
+				<span class="page_authors">
+          <a href="http://www.comp.nus.edu.sg/~chinwn">Wei-Ngan Chin</a> and
+					<a href="http://www.comp.nus.edu.sg/~chanhle/">Ton Chanh Le</a> and
+					<a href="https://www.scm.tees.ac.uk/s.qin/">Shengchao Qin</a>
+				</span>
+			</div>
+		</td>
+	</tr>
+
+	<tr>
+		<td valign="top" width="25%">
+			<br><br><br>
+      <div class="center_align"><span class="item_title">MENU</span></div>
+      <hr/>
+      <div class="left_align">
+        <a class="sub_menu_item" href="index.html">Introduction</a>
+        <br/><br/>
+        <a class="sub_menu_item" href="src/hipcap-tr.pdf" target="_blank">Technical Report</a>
+      </div>
+      <hr/>
+      
+      <br><br>
+			<div class="center_align"><span class="item_title">EXAMPLEs</span></div>
+			<hr/>
+			<ul>
+				<li><a class="example_item" href="infer.html?ex=0&type=ss">New&nbsp;Program</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex1a-fm&type=ss">CDL-1</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex2-fm&type=ss">CDL-2</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex3-fm&type=ss">CDL-3 (barrier)</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex4-race&type=ss">CDL-4 (race error - valid spec)</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex4a-race&type=ss">CDL-4 (race error - invalid spec)</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex5-deadlock&type=ss">CDL-5 (deadlock - valid spec)</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex5a-deadlock&type=ss">CDL-5 (deadlock - invalid spec)</a></li>
+			</ul>
+
+			<div class="center_align"></div>
+			<hr/>
+		</td>
+
+		<td valign="top">
+		<!-- main: -->
+			<br><br>
+			<div>
+				<!-- Overview -->
+				<p class="intro_sub_title"><u>Overview</u></p>
+				<p class="justify_align">
+					HipCAP is a concurrency verification system, which employs the concept of 
+					<em>concurrent abstract predicates</em> (CAP) for precisely tracking resource exchanges 
+					among concurrent threads. The system aims to formally prove three correctness 
+					properties of concurrent programs: 
+					<ol type="i">
+						<li>race-freedom,</li>
+						<li>deadlock-freedom and</li>
+						<li>resource-preservation.</li>
+					</ol>
+				</p>
+				
+				<p class="justify_align">
+					Currently, we are focusing on a formal verification solution for the versatile <b>CountDownLatch</b> (CDL)
+					where multiple threads are involved in data exchanges during concurrency
+					synchronization. CountDownLatch example programs (on the left panel) 
+					can be run <a href="infer.html?ex=0&type=ss"><b>ONLINE</b></a>.
+				</p>
+				
+				<br><br><br>
+				<p class="contact">Please contact <a href="http://www.comp.nus.edu.sg/~chanhle">Ton Chanh Le</a> 
+				if you have any problems/suggestions/discussions or simply want to learn more about 
+				<a href "http://loris-7.ddns.comp.nus.edu.sg/~project/hipcap">HipCAP</a>. 
+				</p>
+		</td>
+	</tr>
+	</table>
+</body>
+</html>
