@@ -1,0 +1,17 @@
+
+!!!Full processing file "../src/temp/cdl-ex1a-fm.489.ss.780.ss.224.ss"
+Parsing file "../src/temp/cdl-ex1a-fm.489.ss.780.ss.224.ss" by default parser...
+
+!!! processing primitives "["prelude.ss"]
+Starting Omega.../usr/local/bin/oc
+
+Checking procedure main$... 
+Procedure main$ SUCCESS.
+Stop Omega... 144 invocations 
+0 false contexts at: ()
+
+!!! log(small):(0.212767,882)
+Total verification time: 0.63497 second(s)
+	Time spent in main process: 0.287719 second(s)
+	Time spent in child processes: 0.347251 second(s)
+

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /conchip-tr.pdf
+
+User-agent: *
+Disallow: /

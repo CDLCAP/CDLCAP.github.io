@@ -1,0 +1,141 @@
+
+<html>
+<body>
+	<head>
+		<title>HipCAP</title>
+		<script type="text/javascript" src="js/codemirror.js"></script>
+    <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/codemirror.css" />
+		<link rel="stylesheet" href="css/text_area_theme/elegant.css" />
+		<script type="text/javascript" src="js/infer.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/clike.js"></script>
+	</head>
+	
+	<table class="main_table" >
+	<caption align=bottom class=captiondataframe></caption>
+	<tr>
+		<td colspan = "3">
+			<div id="intro_title" class="page_title_border">
+				<span class="page_title">
+					<a href="index.html">HipCAP</a>: 
+					A Concurrency Verification System <br> with Higher-Order Concurrent Abstract Predicates</span>
+				<br><br>
+				<span class="page_authors">
+          <a href="http://www.comp.nus.edu.sg/~chinwn">Wei-Ngan Chin</a>,
+					<a href="http://www.comp.nus.edu.sg/~chanhle/">Ton Chanh Le</a> and
+					<a href="https://www.scm.tees.ac.uk/s.qin/">Shengchao Qin</a>
+				</span>
+      </div>
+		</td>
+	</tr>
+
+	<tr>
+		<td valign="top" width="25%" rowspan="2">
+			<br><br><br>
+      <div class="center_align"><span class="item_title">MENU</span></div>
+      <hr/>
+      <div class="left_align">
+        <a class="sub_menu_item" href="index.html">Introduction</a>
+        <br/><br/>
+        <a class="sub_menu_item" href="src/hipcap-tr.pdf" target="_blank">Technical Report</a>
+      </div>
+      <hr/>
+      
+      <br><br>
+      
+			<div class="center_align"><span class="item_title">EXAMPLEs</span></div>
+			<hr/>
+			<ul>
+				<li><a class="example_item" href="infer.html?ex=0&type=ss">New&nbsp;Program</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex1a-fm&type=ss">CDL-1</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex2-fm&type=ss">CDL-2</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex3-fm&type=ss">CDL-3 (barrier)</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex4-race&type=ss">CDL-4 (race error - valid spec)</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex4a-race&type=ss">CDL-4 (race error - invalid spec)</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex5-deadlock&type=ss">CDL-5 (deadlock - valid spec)</a></li>
+				<li><a class="example_item" href="infer.html?ex=cdl-ex5a-deadlock&type=ss">CDL-5 (deadlock - invalid spec)</a></li>
+			</ul>
+
+			<div class="center_align">
+			</div>
+			<hr/>
+		</td>
+		
+		<td valign="top" colspan = "2">
+			<br><br><br>
+			<!-- main: -->
+			
+			<span class="item_title left_align">Input</span>
+
+			<form action="cgi-bin/verify.pl" method=POST>
+				<textarea id="program_container" class="program_input_area_full" name="program" rows="18">
+        </textarea>
+        <!--
+        <script type="text/javascript" language="javascript">
+          var myTextArea = document.getElementById('program_container');
+          var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
+          myCodeMirror.setSize(null, "20%");
+        </script>
+        -->
+
+				<br/>
+				<input id="program_name" type="hidden" name="ex"/>
+				<input id="program_type" type="hidden" name="type"/>
+				<!-- <input id="program_options" type="hidden" name ="options"/> -->
+				<!-- Flags:&nbsp;<input id="program_options" type="text" name ="options"/> -->
+				<!-- <input id="program_result" type="hidden" name="result"/> -->
+				<!-- <br/> -->
+				<input type="submit" value="Verify"/> 
+				<input type="button" value="Clear Result" onClick="clearResultFrame()"/>
+				<br/>
+				<br/>
+			</form>
+		</td>
+	</tr>
+
+	<tr>
+		<td valign="top" width="25%">
+			<div id="vdetails">
+				<span class='item_title'> Results </span>
+        (Press <img src="imgs/greencheckround_orig.png" width="16px" height="16px"> or 
+         <img src="imgs/redcrossround_orig.png" width="16px" height="16px">
+         to see the details) 
+				<hr/>
+				<!-- <input id="program_result" type="hidden" name="result"/> -->
+				<table id = "tresult" cellspacing=10 border=0 width="100%">
+					<tr><th class="left_align">Method</th><td></td></tr>
+				</table>
+				<br/>
+			</div>
+			<!-- end main: -->
+		</td>
+		<td valign="top"  width="75%">
+			<div id="vdetails">
+					<span class='item_title' > Verification Result </span>
+					<input type="checkbox" id="cb_details" onClick="toggleVisibility(this)"><br/>
+					<div id="details_container"  style="visibility: hidden">
+            <!-- <input id="program_result" type="hidden" name="result"/> -->
+            <textarea readonly id="result_container" class="program_input_area_result" name="result" rows="20"></textarea>
+					</div>
+					<br/>
+			</div>
+			<!-- end main: -->
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">
+			<p class="contact">Please contact <a href="http://www.comp.nus.edu.sg/~chanhle">Ton Chanh Le</a> 
+				if you have any problems/suggestions/discussions or simply want to learn more about 
+				<a href "index.html">HipCAP</a>. 
+			</p>
+		</td>
+	</tr>
+	</table>
+</body>
+</html>
+
+
+

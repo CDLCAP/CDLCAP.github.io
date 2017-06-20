@@ -1,0 +1,19 @@
+
+!!!Full processing file "../src/temp/cdl-ex4-race.706.ss"
+Parsing file "../src/temp/cdl-ex4-race.706.ss" by default parser...
+
+!!! processing primitives "["prelude.ss"]
+Starting Omega.../usr/local/bin/oc
+
+Checking procedure main$... 
+!!! WARNING: [ERR-RACE:1 File "../src/temp/cdl-ex4-race.706.ss",Line:54,Col:2]
+
+Procedure main$ SUCCESS.
+Stop Omega... 165 invocations 
+0 false contexts at: ()
+
+!!! log(small):(0.263155,1388)
+Total verification time: 0.417823 second(s)
+	Time spent in main process: 0.318999 second(s)
+	Time spent in child processes: 0.098824 second(s)
+

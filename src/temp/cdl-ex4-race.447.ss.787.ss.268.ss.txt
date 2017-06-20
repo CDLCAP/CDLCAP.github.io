@@ -1,0 +1,70 @@
+
+!!!Full processing file "../src/temp/cdl-ex4-race.447.ss.787.ss.268.ss"
+Parsing file "../src/temp/cdl-ex4-race.447.ss.787.ss.268.ss" by default parser...
+
+!!! processing primitives "["prelude.ss"]
+Starting Omega.../usr/local/bin/oc
+
+Checking procedure main$... 
+( []) :../src/temp/cdl-ex4-race.447.ss.787.ss.268.ss:62: 4: Proving condition of a par's case failed.
+
+(Cause of ParCase Failure):../src/temp/cdl-ex4-race.447.ss.787.ss.268.ss:62: 4:  List of Failesc Context: [FEC(1, 0, 0 )]
+Failed States:
+[
+ Label: []
+ State:
+        
+         fe_kind: MAY
+         fe_name: separation entailment
+         fe_locs: {
+                   fc_message: to lemma_split: LHS:CNT and RHS: CNT
+                   fc_current_lhs_flow: {FLOW,(4,5)=__norm#E}}
+[[ COND ==>  SEARCH ==>  COND ==>  Match(c_39',c_39') ==>  SEARCH ==>  SEARCH ==>  (Lemma ==> split(c_39',c_39')) ==>  Match(c_39',c_39') ==>  COND ==>  SEARCH ==>  SEARCH ==>  COND ==>  NothingToDoto lemma_split: LHS:CNT and RHS: CNT ==> ]]
+       FAIL_UNION 
+        
+         fe_kind: MUST
+         fe_name: separation entailment
+         fe_locs: {
+                   fc_message: 
+                    matching of ho_args failed ( flted_62_2566=3 |-  1=flted_62_2566. LOCS:[62;0] (must-bug))
+                   fc_current_lhs_flow: {FLOW,(1,28)=__flow#E}}
+[[empty]]
+       FAIL_UNION 
+        
+         fe_kind: MUST
+         fe_name: separation entailment
+         fe_locs: {
+                   fc_message: base_case_unfold failed
+                   fc_current_lhs_flow: {FLOW,(4,5)=__norm#E}}
+[[ COND ==>  SEARCH ==>  COND ==>  Match(c_39',c_39') ==>  SEARCH ==>  SEARCH ==>  (Lemma ==> split(c_39',c_39')) ==>  Match(c_39',c_39') ==>  COND ==>  SEARCH ==>  SEARCH ==>  (Lemma ==> split(c_39',c_39')) ==>  Match(c_39',c_39') ==>  SEARCH ==>  COND ==>  BaseCaseUnfold ==> ]]
+       FAIL_UNION 
+        
+         fe_kind: MUST
+         fe_name: separation entailment
+         fe_locs: {
+                   fc_message: base_case_unfold failed
+                   fc_current_lhs_flow: {FLOW,(4,5)=__norm#E}}
+[[ COND ==>  SEARCH ==>  COND ==>  Match(c_39',c_39') ==>  SEARCH ==>  SEARCH ==>  (Lemma ==> split(c_39',c_39')) ==>  Match(c_39',c_39') ==>  COND ==>  SEARCH ==>  COND ==>  BaseCaseUnfold ==> ]]
+       
+ ]
+
+Context of Verification Failure: _0:0_0:0
+
+Last Proving Location: ../src/temp/cdl-ex4-race.447.ss.787.ss.268.ss_59:6_59:11
+
+ERROR: at ../src/temp/cdl-ex4-race.447.ss.787.ss.268.ss_62:4_64:19
+Message: Proving condition of a par's case failed.
+
+Procedure main$ FAIL.(2)
+
+Exception Failure("Proving condition of a par's case failed.") Occurred!
+
+Error(s) detected when checking procedure main$
+Stop Omega... 109 invocations 
+0 false contexts at: ()
+
+!!! log(small):(0.17267,1135)
+Total verification time: 0.448683 second(s)
+	Time spent in main process: 0.244524 second(s)
+	Time spent in child processes: 0.204159 second(s)
+

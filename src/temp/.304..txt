@@ -1,0 +1,10 @@
+
+!!!Full processing file "../src/temp/.304."
+Parsing file "../src/temp/.304." by default parser...
+File "../src/temp/.304.", line 1, characters 0-1
+ --error: Stream.Error("illegal begin of hprog")
+ at:
+!!! WARNING : Logging not done on finalizecaught
+
+Exception occurred: Stream.Error("illegal begin of hprog")
+Error3(s) detected at main 

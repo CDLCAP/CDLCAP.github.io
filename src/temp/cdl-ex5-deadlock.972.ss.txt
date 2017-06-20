@@ -1,0 +1,19 @@
+
+!!!Full processing file "../src/temp/cdl-ex5-deadlock.972.ss"
+Parsing file "../src/temp/cdl-ex5-deadlock.972.ss" by default parser...
+
+!!! processing primitives "["prelude.ss"]
+Starting Omega.../usr/local/bin/oc
+
+Checking procedure main$... 
+!!! WARNING: [ERR-DEADLOCK:1 File "../src/temp/cdl-ex5-deadlock.972.ss",Line:54,Col:2]
+
+Procedure main$ SUCCESS.
+Stop Omega... 139 invocations 
+0 false contexts at: ()
+
+!!! log(small):(0.116307,597)
+Total verification time: 0.208406 second(s)
+	Time spent in main process: 0.147365 second(s)
+	Time spent in child processes: 0.061041 second(s)
+

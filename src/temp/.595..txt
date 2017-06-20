@@ -1,0 +1,14 @@
+
+!!!Full processing file "../src/temp/.595."
+Parsing file "../src/temp/.595." by default parser...
+
+!!! processing primitives "["prelude.ss"]
+Starting Omega.../usr/local/bin/oc
+Stop Omega... 33 invocations 
+0 false contexts at: ()
+
+!!! log(small):(0.011919,176)
+Total verification time: 0.141157 second(s)
+	Time spent in main process: 0.11388 second(s)
+	Time spent in child processes: 0.027277 second(s)
+

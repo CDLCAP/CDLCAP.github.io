@@ -1,0 +1,10 @@
+
+!!!Full processing file "../src/temp/0.33.ss"
+Parsing file "../src/temp/0.33.ss" by default parser...
+File "../src/temp/0.33.ss", line 3, characters 0-6
+ --error: Stream.Error("IDENTIFIER _ then OPAREN expected after [typ] (in [proc_header])")
+ at:
+!!! WARNING : Logging not done on finalizecaught
+
+Exception occurred: Stream.Error("IDENTIFIER _ then OPAREN expected after [typ] (in [proc_header])")
+Error3(s) detected at main 

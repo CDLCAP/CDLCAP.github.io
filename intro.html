@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>HIPimm: An Overview</title>
+		<script type="text/javascript" src="js/script.js"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body class="verdana_font" onload="enable_noresize()">
+
+		<div id="intro_title" class="page_title_border">
+			<span class="page_title">HIPimm: Verifying Granular Immutability Guarantees</span>
+		</div>
+		
+		<div id="intro_content" class="italic_font">
+			<p>By
+				<a href="http://www.comp.nus.edu.sg/~andreeac/">Andreea Costea</a>,
+				<a href="http://www.comp.nus.edu.sg/~asankhs/">Asankhaya Sharma</a> and
+				<a href="http://www.cs.ox.ac.uk/people/cristina.david/">Cristina David</a>
+			</p>
+			
+			<p class="intro_sub_title "><u>HIPimm's Overview</u></p>
+
+			<p class="justify_align">
+			HIPimm, an extension of the HIP/SLEEK automatic verification system,
+offers immutability guarantees on top of 
+ensuring functional correctness  
+for heap-manipulating programs.
+The extra capability of HIPimm, as compared to its precursor,  is 
+the ability to reason about immutability guarantees in a granular manner.
+For this purpose, we enhance the specification language with immutability annotations 
+which provide the means to assert  
+whether the annotated heap  parts of a data structure 
+can be mutated
+or whether is inaccessible.  
+As part of user defined predicates,
+these annotations are integrated at the data field level offering granular
+immutability guarantees. 
+An immediate result of this new functionality is a finer
+level of precision in the verification process of programs involving heap data structures.
+That is, we enable the verification of program properties such as preservation of
+data structures shapes and/or values, flexible aliases, and information leakage prevention.			
+			</p> 
+
+
+			<p class="intro_sub_title "><u>Downloads</u></p>
+			<p><b><a href="download.html">Latest HIPimm's virtual machine </a></b> (all-in-one ~4.3GB) - with HIPimm and prerequisite software pre-installed</p>
+			<p><b><a href="HIPimm.pdf">Technical Report</a></b></p>
+			
+			<p class="intro_sub_title "><u>Example programs</u></p>
+			
+			<p>
+				Example programs  (on the left panel) can be run 
+<span style="background-color:yellow">ONLINE</span>. More example programs and benchmarks can be found in our <a href="download.html">Download page</a>
+			</p>
+
+			
+		</div>
+
+	</body>
+
+</html>
+</a>
+			</p>
+			
+		</div>
+
+	</body>
+
+</html>

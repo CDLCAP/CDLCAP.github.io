@@ -1,0 +1,59 @@
+
+!!!Full processing file "../src/temp/0.335.ss"
+Parsing file "../src/temp/0.335.ss" by default parser...
+
+!!! processing primitives "["prelude.ss"]
+Starting Omega.../usr/local/bin/oc
+
+Checking procedure create$int... 
+Procedure create$int SUCCESS.
+
+Checking procedure getSum$NodeSll~NodeSll... Proving binding in method getSum$NodeSll~NodeSll for spec  EAssume 
+   (exists m_1480,n_1481: x::sll{}<m_1480> * y::sll{}<n_1481>&m<=n & 
+   m_1480=m & n_1481=n&{FLOW,(4,5)=__norm#E}[]
+   , Line 0
+
+( [(,0 ); (,1 )]) bind: node  y'::NodeSll<data1_31_1410',next_31_1411'>@L cannot be derived from context
+1 File "../src/temp/0.335.ss",Line:31,Col:21
+
+(Cause of Bind Failure) List of Failesc Context: [FEC(1, 0, 0 )]
+Failed States:
+[
+ Label: [(,0 ); (,1 )]
+ State:
+        
+         fe_kind: MUST
+         fe_name: separation entailment
+         fe_locs: {
+                   fc_message: do_unmatched_rhs : y'::NodeSll<data1_31_1410',next_31_1411'>@L
+                   fc_current_lhs_flow: {FLOW,(6,10)=__Error#E}}
+[[ COND ==>  UnmatchedRHSData ==> ]]
+       FAIL_OR 
+        
+         fe_kind: Valid
+         fe_name: 
+         fe_locs: Failure_Valid
+[[empty]]
+       
+ ]1 File "../src/temp/0.335.ss",Line:31,Col:21
+
+Context of Verification Failure: _0:0_0:0
+
+Last Proving Location: ../src/temp/0.335.ss_31:21_31:28
+
+Procedure getSum$NodeSll~NodeSll FAIL.(2)
+
+Exception Failure("bind failure exception") Occurred!
+
+Error(s) detected when checking procedure getSum$NodeSll~NodeSll
+
+Checking procedure main1$int~int... 
+Procedure main1$int~int SUCCESS.
+Stop Omega... 226 invocations 
+0 false contexts at: ()
+
+!!! log(small):(0.112067,1265)
+Total verification time: 0.211191 second(s)
+	Time spent in main process: 0.137047 second(s)
+	Time spent in child processes: 0.074144 second(s)
+
